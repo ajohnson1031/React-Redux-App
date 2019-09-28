@@ -1,0 +1,52 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+
+  #root {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+
+    .App {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: inherit;
+      margin-top: 50px;
+
+      form {
+        input {
+          font-size: 1.2rem;
+          padding: 6px 25px;
+          width: 300px;
+          border-top-left-radius: 1.2rem;
+          border-bottom-left-radius: 1.2rem;
+          border: 1px solid #ccc;
+          border-right: none;
+          outline: none;
+        }
+
+        button {
+          background-color: lighten(seagreen, 15%);
+          font-size: 1.2rem;
+          padding: 6.5px 30px;
+          border: none;
+          border-top-right-radius: 1.2rem;
+          border-bottom-right-radius: 1.2rem;
+          position: relative;
+          top: 1px;
+          color: white;
+          cursor: pointer;
+          outline: none;
+
+          &:hover {
+            background-color: darken(seagreen, 10%);
+          }
+        }
+      }
+    }
+  }
+}
