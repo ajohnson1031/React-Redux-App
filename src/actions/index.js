@@ -16,7 +16,9 @@ export const loadHero = (e, hero) => dispatch => {
   } else dispatch({ type: HERO_LOADING, payload: hero });
 
   axios
-    .get(`https://superheroapi.com/api/${token}/search/${hero}`)
+    .get(
+      `https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/${token}/search/${hero}`
+    )
     .then(res =>
       res.data.results !== undefined
         ? dispatch({ type: HERO_SUCCESS, payload: res.data.results })
@@ -42,7 +44,11 @@ export const toggleURL = url => dispatch => {
   console.log(url);
   const newURL =
     url === "?" ? (
-      <a href="https://superheroapi.com/ids.html" target="_blank">
+      <a
+        href="https://superheroapi.com/ids.html"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         LIST OF AVAILABLE CHARACTERS
       </a>
     ) : (
