@@ -1,0 +1,146 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html #root,
+body #root {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+}
+html #root .App,
+body #root .App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+  margin-top: 50px;
+}
+html #root .App ul,
+body #root .App ul {
+  padding-inline-start: 0;
+  color: #5a6673;
+}
+html #root .App ul li,
+body #root .App ul li {
+  list-style-type: none;
+  line-height: 1.8rem;
+}
+html #root .App ul li p,
+body #root .App ul li p {
+  margin-bottom: 4px;
+}
+html #root .App form input,
+body #root .App form input {
+  font-size: 1.2rem;
+  padding: 6px 25px;
+  width: 300px;
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+  border: 1px solid #ccc;
+  border-right: none;
+  outline: none;
+  margin: 30px 0;
+}
+html #root .App form button,
+body #root .App form button {
+  background-color: #44c17b;
+  font-size: 1.2rem;
+  padding: 6.5px 30px;
+  border: none;
+  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+html #root .App form button:hover,
+body #root .App form button:hover {
+  background-color: #21653f;
+}
+html #root .App form span,
+body #root .App form span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 7px 11px;
+  margin-left: 10px;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 0.9rem;
+}
+html #root .App form span a,
+body #root .App form span a {
+  color: white;
+  padding: 0 10px;
+}
+html #root .App .err,
+body #root .App .err {
+  padding: 12px 30px;
+  background-color: #ffebeb;
+  color: #ff6666;
+  border: 2px solid #ff6666;
+  border-radius: 30px;
+  font-weight: bold;
+}
+html #root .App .herolist-container,
+body #root .App .herolist-container {
+  width: 100%;
+}
+html #root .App .herolist-container .ui.card,
+body #root .App .herolist-container .ui.card {
+  width: 800px;
+  margin: 0 auto 30px;
+}
+html #root .App .hero-image,
+body #root .App .hero-image {
+  max-width: 290px;
+  min-width: 290px;
+}
+html #root .App .hero-item,
+body #root .App .hero-item {
+  flex-direction: row;
+}
+html #root .App .hero-item .meta,
+body #root .App .hero-item .meta {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100% - 350px);
+}
+html #root .App .hero-item .good,
+body #root .App .hero-item .good {
+  background-color: #eaf5ff;
+}
+html #root .App .hero-item .bad,
+body #root .App .hero-item .bad {
+  background-color: #ffcccc;
+}
+html #root .App .hero-item .bad li,
+body #root .App .hero-item .bad li {
+  color: #cc0000;
+}
+html #root .App .hero-stats,
+body #root .App .hero-stats {
+  background-color: #434d57;
+  padding: 30px;
+}
+html #root .App .hero-stats h3,
+body #root .App .hero-stats h3 {
+  text-decoration: underline;
+}
+html #root .App .hero-stats .affiliations,
+body #root .App .hero-stats .affiliations {
+  color: lightyellow;
+}
+html #root .App .hero-stats .appearance,
+body #root .App .hero-stats .appearance {
+  color: #c1e1ec;
+}
+html #root .App .hero-stats .power-stats,
+body #root .App .hero-stats .power-stats {
+  color: #ffcccc;
+}
